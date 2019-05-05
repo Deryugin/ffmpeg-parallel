@@ -13,7 +13,7 @@ function splitter
 
 	set fext (ext $argv[1])
 
-	for i in (seq 30)
+	for i in (seq 0 30)
 		set skip (echo "$i * 600" | bc)
 		set out (echo $i | xargs printf "out%03d.$fext")
 		set out $tmpdir/$out
